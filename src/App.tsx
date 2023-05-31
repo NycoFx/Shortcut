@@ -9,7 +9,6 @@ interface Option {
 const options: Option[] = [
   { id: 1, value: "Opção 1" },
   { id: 2, value: "Opção 2" },
-  { id: 3, value: "Opção 3" },
 ];
 
 function replaceBetween(
@@ -45,7 +44,7 @@ const ListItem = ({
 
 const App: React.FC = () => {
   const [inputValue, setInputValue] = useState("");
-  const [selectedOption, setSelectedOption] = useState<Option | null>(null);
+  // const [selectedOption, setSelectedOption] = useState<Option | null>(null);
   const [highlightedIndex, setHighlightedIndex] = useState<number | null>(null);
   const [cursorPos, setCursorPos] = useState<{
     firstPos: number;
